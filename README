@@ -1,0 +1,16 @@
+libugci: Library to support Happ Controls' USB Game Controller Interface
+
+http://www.swissdisk.com/~bcollins/ugci/
+
+This library provides a poll/callback interface to certain events that
+occur in the UGCI that are not normally handled by the input layer. For
+example, Joysticks, Mouse, and Steering inputs are already handled.
+However the Start/Coin is not.
+
+To use this library you will need HIDDev compiled into your kernel with an
+interface version of atleast 1.0.4. That can be found in recent 2.6 and
+2.4 kernels.
+
+Once compiled, you can then use the applications that support it
+(currently xMAME, and soon to be snes9x) or create your own. The ugci.h
+header is documented via comments, and there are several example programs.
